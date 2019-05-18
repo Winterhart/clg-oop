@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace exemple_1
 {
     /**
@@ -11,7 +10,12 @@ namespace exemple_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(" ---------- Moyen de transport ---------- ");
+            // Nouvelle voiture avec 30 Km/h vitesse moyenne, 2.34$ / Km et 20Km de distance 
+            Voiture voiture = new Voiture(30, 2.34, 20);
+            // Démonstation du prix du déplacement
+            Console.WriteLine("Prix Totale pour le trajet: {0} $",
+             voiture.CaculePrixDéplacement());
         }
     }
 }
