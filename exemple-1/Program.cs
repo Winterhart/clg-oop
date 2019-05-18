@@ -11,11 +11,16 @@ namespace exemple_1
         static void Main(string[] args)
         {
             Console.WriteLine(" ---------- Moyen de transport ---------- ");
+            Console.WriteLine("Voiture:");
             // Nouvelle voiture avec 30 Km/h vitesse moyenne, 2.34$ / Km et 20Km de distance 
             Voiture voiture = new Voiture(30, 2.34, 20);
             // Démonstation du prix du déplacement
-            Console.WriteLine("Prix Totale pour le trajet: {0} $",
-             voiture.CaculePrixDéplacement());
+            Console.WriteLine("Prix total pour le trajet: {0} $", voiture.CaculePrixDéplacement());
+
+            Console.WriteLine("Moyen Transport:");
+            MoyenTransport moyen = new MoyenTransport(30, 2.34, 20);
+            Console.WriteLine("Prix total pour la traget {0} $ ", moyen.CaculePrixDéplacement());
+
         }
     }
 }

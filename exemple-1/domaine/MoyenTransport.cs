@@ -1,21 +1,20 @@
 using System;
 namespace exemple_1 {
     /* 
-        Class mère des moyen de transport 
+        Class mère des moyens de transport 
     */
     public class MoyenTransport {
-
         // Propriété vitesse moyenne en Kilomètre/heure
-        private double vitesseMoyenne;
+        public double VitesseMoyenne {get; private set;}
         // Propriété coût ($) par Kilomètre
-        private double coûtParKilo;
+        public double CoûtParKilo {get; private set;}
         // Propriété en Kilomètre
-        private double distanceKilo;
+        public double DistanceKilo {get; private set;}
         public MoyenTransport(double vitesse, double coût, double distance){
             Console.WriteLine("Moyen Transport initialisation");
-            this.coûtParKilo = coût;
-            this.vitesseMoyenne = vitesse;
-            this.distanceKilo = distance;
+            this.CoûtParKilo = coût;
+            this.VitesseMoyenne = vitesse;
+            this.DistanceKilo = distance;
         }
 
         /*
@@ -23,7 +22,7 @@ namespace exemple_1 {
         Kilomètre / Kilomètre / heure => heure
          */
         public double CalculeTempsRequis(){
-            return distanceKilo/vitesseMoyenne;
+            return DistanceKilo/VitesseMoyenne;
         }
 
 
@@ -32,7 +31,7 @@ namespace exemple_1 {
           ( $ / Kilomètre ) * kilomètre => $
          */
         public double CaculePrixDéplacement() {
-            return coûtParKilo * distanceKilo;
+            return CoûtParKilo * DistanceKilo;
         }
     }
 }
