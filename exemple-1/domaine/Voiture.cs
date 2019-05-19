@@ -1,9 +1,9 @@
 using System;
 namespace exemple_1 {
     /**
-        Classe dérivé de Moyen de transport
+        Classe dérivé de transport
      */
-    public class Voiture : MoyenTransport {
+    public class Voiture : Transport {
         public Voiture(double vitesse, double coût, double distance): 
         base(vitesse, coût, distance){
             Console.WriteLine("Voiture initialisation");

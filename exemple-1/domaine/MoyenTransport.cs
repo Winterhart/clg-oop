@@ -1,16 +1,16 @@
 using System;
 namespace exemple_1 {
     /* 
-        Class mère des moyens de transport 
+        Class mère des transports 
     */
-    public class MoyenTransport {
+    public class Transport {
         // Propriété vitesse moyenne en Kilomètre/heure
         public double VitesseMoyenne {get; private set;}
         // Propriété coût ($) par Kilomètre
         public double CoûtParKilo {get; private set;}
         // Propriété en Kilomètre
         public double DistanceKilo {get; private set;}
-        public MoyenTransport(double vitesse, double coût, double distance){
+        public Transport(double vitesse, double coût, double distance){
             Console.WriteLine("Moyen Transport initialisation");
             this.CoûtParKilo = coût;
             this.VitesseMoyenne = vitesse;

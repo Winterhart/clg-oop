@@ -18,7 +18,7 @@ namespace exemple_1
             Console.WriteLine("Prix total pour le trajet: {0} $", voiture.CaculePrixDéplacement());
 
             Console.WriteLine("Moyen Transport:");
-            MoyenTransport moyen = new MoyenTransport(30, 2.34, 20);
+            Transport moyen = new Transport(30, 2.34, 20);
             Console.WriteLine("Prix total pour la traget {0} $ ", moyen.CaculePrixDéplacement());
 
         }
