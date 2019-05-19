@@ -8,4 +8,6 @@ Repo. pour démontrer les principles de la programmation orienté object avec C-
  - Classe dérivée: `Voiture.cs`
  - Classe principale:  `Program.cs`
 
+ Voici la [Présentation](https://docs.google.com/presentation/d/11ODGzQO3p13Kbr04eucg0Gghpj-CbvNlEWFUSARmCLg/edit?usp=sharing) pour l'exemple 1 polymorphisme par héritage.
+ 
  
