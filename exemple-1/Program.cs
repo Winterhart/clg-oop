@@ -19,7 +19,7 @@ namespace exemple_1
 
             Console.WriteLine("Moyen Transport:");
             Transport moyen = new Transport(30, 2.34, 20);
-            Console.WriteLine("Prix total pour la traget {0} $ ", moyen.CaculePrixDéplacement());
+            Console.WriteLine("Prix total pour le trajet {0} $ ", moyen.CaculePrixDéplacement());
 
         }
     }
