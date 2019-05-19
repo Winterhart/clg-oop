@@ -1,6 +1,6 @@
 # Programmation Orienté Objet
 
-Repo. pour démontrer les principles de la programmation orienté object avec C-Sharp
+Repo. pour démontrer les principes de la programmation orienté object avec C-Sharp
 
 ## Exemple 1 : Polymorphisme par héritage
  
