@@ -1,6 +1,7 @@
 using System;
 namespace domain {
-    public class Transport{
+
+    public class Transport {
         // Common properties to all transport
         private readonly double _averageSpeedKmHour;
         private readonly double _costPerKm;

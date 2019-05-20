@@ -30,7 +30,7 @@ namespace transport_app
 
             foreach(var transport in transports){
                 Console.WriteLine(transport.GetType().ToString());
-                double travelDistance = 2000;
+                double travelDistance = 20;
                 var travelTime = transport.ComputeAverageTime(travelDistance);
 
                 Console.WriteLine("For {0} Km, Average Time: {1} hours and {2} minutes",
