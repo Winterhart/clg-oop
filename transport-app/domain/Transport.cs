@@ -34,8 +34,8 @@ namespace domain {
             return CostPerKm * distanceKm;
         }
 
-        public virtual double ComputeAverageTime(double distanceKm){
-            return  distanceKm / AverageSpeedKmHour;
+        public virtual TimeSpan ComputeAverageTime(double distanceKm){
+            return TimeSpan.FromHours(distanceKm / AverageSpeedKmHour);
         }
 
     }

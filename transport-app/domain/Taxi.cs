@@ -5,7 +5,7 @@ namespace domain {
 
         public override double ComputeCostForRun(double distanceKm){
             // 25% more expansive
-            return 1.25 * base.CostPerKm * distanceKm;
+            return  5.00 + (base.CostPerKm * distanceKm);
         }
 
     }
