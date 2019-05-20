@@ -1,5 +1,5 @@
 namespace domain {
-    public class Bus{
+    public class Bus : Transport{
         
     }
 }

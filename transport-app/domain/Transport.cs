@@ -1,3 +1,4 @@
+using System;
 namespace domain {
     public class Transport{
         // Common properties to all transport
@@ -5,7 +6,7 @@ namespace domain {
         private readonly double _costPerKm;
         private readonly int _numberOfPassenger;
 
-        
+        private const double MAXIMUM_AVG_SPEED = 100000;
         protected double AverageSpeedKmHour {
             get { return _averageSpeedKmHour;}
         }
@@ -19,21 +20,23 @@ namespace domain {
         }
 
 
-        public Transport(double avgSpeedKM, double costKm, int numberPassenger){
-            this._averageSpeedKmHour = avgSpeedKM;
+        public Transport(double avgSpeedKm, double costKm, int numberPassenger){
+            if(avgSpeedKm < 0 || avgSpeedKm > MAXIMUM_AVG_SPEED){
+                throw new ArgumentOutOfRangeException(nameof(avgSpeedKm), 
+                "Average Speed must be larger than 0 and smaller than 100 000 Km/h");
+            }
+            this._averageSpeedKmHour = avgSpeedKm;
             this._costPerKm = costKm;
             this._numberOfPassenger = numberPassenger;
         }
 
-        public double ComputeCostForRun(double distanceKm){
-            return this._costPerKm * distanceKm;
+        public virtual double ComputeCostForRun(double distanceKm){
+            return CostPerKm * distanceKm;
         }
 
-        public double ComputeAverageTime(double distanceKm){
-            return  distanceKm / this._averageSpeedKmHour;
+        public virtual double ComputeAverageTime(double distanceKm){
+            return  distanceKm / AverageSpeedKmHour;
         }
-
-        
 
     }
 }

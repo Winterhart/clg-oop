@@ -1,4 +1,5 @@
 ﻿using System;
+using domain;
 
 namespace transport_app
 {
@@ -11,7 +12,13 @@ namespace transport_app
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("----- Transport App ----");
+            Car car = new Car(30.2, 0.76, 2);
+            
+            List<Transport> transports = {car};
+
+
         }
     }
 }
