@@ -4,7 +4,6 @@ namespace domain {
         base(avgSpeedKm, costKm, numberPassenger){}
 
         public override double ComputeCostForRun(double distanceKm){
-            // 25% more expansive
             return  5.00 + (base.CostPerKm * distanceKm);
         }
 
